@@ -1,0 +1,11 @@
+CREATE DATABASE RegistrationDB;
+
+
+USE RegistrationDB;
+CREATE TABLE [dbo].[users]
+(
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[fullName] [nvarchar](max) NOT NULL,
+	[username] [nvarchar](max) NOT NULL,
+	[password] [nvarchar](max) NOT NULL,
+)

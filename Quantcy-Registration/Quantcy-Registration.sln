@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantcy-Registration", "Quantcy-Registration.csproj", "{08663A2D-F3CC-4921-8AB6-67E64131649E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "..\Database\Database.csproj", "{4A5EE8BB-6CBA-4BC6-ADE0-B51070EAF51B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08663A2D-F3CC-4921-8AB6-67E64131649E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08663A2D-F3CC-4921-8AB6-67E64131649E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08663A2D-F3CC-4921-8AB6-67E64131649E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08663A2D-F3CC-4921-8AB6-67E64131649E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5EE8BB-6CBA-4BC6-ADE0-B51070EAF51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5EE8BB-6CBA-4BC6-ADE0-B51070EAF51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5EE8BB-6CBA-4BC6-ADE0-B51070EAF51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5EE8BB-6CBA-4BC6-ADE0-B51070EAF51B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5CAD453-6A2A-4458-B28D-BB9440D42019}
+	EndGlobalSection
+EndGlobal

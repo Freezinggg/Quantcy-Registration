@@ -1,0 +1,66 @@
+﻿@model Quantcy_Registration.Models.Register.RegisterModel
+
+
+@using (Html.BeginForm("Register", "Account"))
+{
+    <div class="text-center">
+        <h3>Register new account</h3>
+
+        <div class="d-flex flex-column" style="justify-content: center; align-items: center">
+            <div class="login">
+                @* <input type="text" id="username" name="username" placeholder="Username"> *@
+                @Html.LabelFor(m => m.fullName, "Full Name")
+                @Html.EditorFor(m => m.fullName)
+
+                <div class="errorMsg">
+                    @Html.ValidationMessageFor(m => m.fullName)
+                </div>
+            </div>
+
+            <div class="login">
+                @* <input type="text" id="username" name="username" placeholder="Username"> *@
+                @Html.LabelFor(m => m.username, "Username")
+                @Html.EditorFor(m => m.username)
+
+                <div class="errorMsg">
+                    @Html.ValidationMessageFor(m => m.username)
+                </div>
+            </div>
+
+            <div class="login">
+                @* <input type="password" id="password" name="password" placeholder="Password"> *@
+                @Html.LabelFor(m => m.password, "Password")
+                @Html.PasswordFor(m => m.password)
+
+                <div class="errorMsg">
+                    @Html.ValidationMessageFor(m => m.password)
+                </div>
+
+            </div>
+
+            <div class="login">
+                <input style="border: black solid 1px" type="submit" class="btn" id="btnRegister" value="Register" />
+            </div>
+
+            <div class="login">
+                @Html.ValidationMessage("Error")
+
+                @* @{
+                    if (ViewBag.Message != null)
+                    {
+            @ViewBag.Message
+                    }
+                } *@
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .login {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 1em;
+        padding-right: 1em;
+    }
+</style>

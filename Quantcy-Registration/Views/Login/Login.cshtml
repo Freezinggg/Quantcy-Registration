@@ -1,0 +1,55 @@
+﻿@model Quantcy_Registration.Models.Login.LoginModel
+
+@using (Html.BeginForm("Login", "Account"))
+{
+    <div class="text-center">
+        <h3>Login</h3>
+
+        <div class="d-flex flex-column" style="justify-content: center; align-items: center">
+            <div class="login">
+                @Html.LabelFor(m => m.usernameLogin, "Username")
+                @Html.EditorFor(m => m.usernameLogin)
+
+                <div class="errorMsg">
+                    @Html.ValidationMessageFor(m => m.usernameLogin)
+                </div>
+            </div>
+
+            <div class="login">
+                @Html.LabelFor(m => m.passwordLogin, "Password")
+                @Html.PasswordFor(m => m.passwordLogin)
+
+                <div class="errorMsg">
+                    @Html.ValidationMessageFor(m => m.passwordLogin)
+                </div>
+                
+            </div>
+
+            <div class="login">
+                <input style="border: black solid 1px" type="submit" class="btn" id="btnLogin" value="Login" />
+            </div>
+
+            <div class="login">
+                <label>Don't have an account? <i><a href="/Account/RegisterIndex">Register here!</a></i> </label>
+            </div>
+
+            <div class="login">
+                @Html.ValidationMessage("Error")
+            </div>
+
+        </div>
+    </div>
+}
+
+<style>
+    .login {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 1em;
+        padding-right: 1em;
+    }
+</style>
+
+<script>
+
+</script>
